@@ -12,3 +12,8 @@ a img {
 li {
   list-style-type: none;
 }
+
+.slide {
+  width: 70%;
+  margin: 0 auto;
+}

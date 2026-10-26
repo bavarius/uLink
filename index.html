@@ -11,7 +11,7 @@
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container-md bg-primary text-light">
-        <a href="#" class="navbar-brand">µLink</a>
+        <a href="#" class="navbar-brand">µLabTool</a>
         <button
           type="button"
           data-bs-toggle="collapse"
@@ -27,10 +27,13 @@
               <a href="#" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Preise</a>
+              <a href="downloads.html" class="nav-link active">Downloads</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link active">Downloads</a>
+              <a href="installation.html" class="nav-link">Installation</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pricing" class="nav-link">Preise</a>
             </li>
             <li class="nav-item">
               <a href="#partners" class="nav-link">Partner</a>
@@ -97,15 +100,168 @@
         Die Basisversion enthält die Anbindung von eines Laborgeräts,
         beispielsweise einem Blutbildanalysegerät
       </p>
-      <h3>
-        Derzeit unterstützte Geräte (Geräteportfolio wird laufend erweitert)
-      </h3>
-      <ul>
-        <li>Zybio Z3 CRP</li>
-        <li>Mythic 18</li>
-        <li>Siemens Clinitek Status</li>
-        <li>Urisys 1100</li>
-      </ul>
+      <!-- Karussell -->
+      <section id="devices">
+        <h3>Derzeit unterstützte Geräte</h3>
+        <p>Hier sieht man die Laborgeräte, die aktuell unterstützt werden. Das Geräteportfolio wird laufend erweitert.</p>
+          <div class="carousel slide" id="slider">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <button
+                class="active"
+                data-bs-slide-to="0"
+                data-bs-target="#slider"
+              ></button>
+              <button data-bs-slide-to="1" data-bs-target="#slider"></button>
+              <button data-bs-slide-to="2" data-bs-target="#slider"></button>
+              <button data-bs-slide-to="3" data-bs-target="#slider"></button>
+            </div>
+
+            <div class="carousel-inner rounded-5">
+              <div class="carousel-item active">
+                <img
+                  src="./img/zybio_sw.webp"
+                  alt="Zybio Z3 CRP"
+                  class="d-block w-100 rounded-5"
+                />
+                <div
+                  class="carousel-caption d-md-block bg-secondary opacity-75"
+                >
+                  <h5>Blutanalysegerät Zybio Z3 CRP</h5>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="./img/mythic18_sw.webp"
+                  alt="Mythic 18"
+                  class="d-block w-100 rounded-5"
+                />
+                <div
+                  class="carousel-caption d-md-block bg-secondary opacity-75"
+                >
+                  <h5>Blutanalysegerät Mythic 18</h5>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="./img/clinitek_sw.webp"
+                  alt="Siemens Clinitek Status;"
+                  class="d-block w-100 rounded-5"
+                />
+                <div
+                  class="carousel-caption d-md-block bg-secondary opacity-75"
+                >
+                  <h5>Urinanalysegerät Siemens Clinitek Status&#174;</h5>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="./img/urisys1100_sw.webp"
+                  alt="Roche Urisys 1100"
+                  class="d-block w-100 rounded-5"
+                />
+                <div
+                  class="carousel-caption d-md-block bg-secondary opacity-75"
+                >
+                  <h5>Urinanalysegerät Roche Urisys&#174; 1100</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Buttons -->
+            <button
+              class="carousel-control-prev"
+              data-bs-slide="prev"
+              data-bs-target="#slider"
+            >
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              data-bs-slide="next"
+              data-bs-target="#slider"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+      <!-- Installation -->
+      <section id="setup">
+        <h3>Installation der Software</h3>
+        <p><a href="installation.html" class="text-reset text-decoration-underline">Hier ist die Beschreibung.</a></p>
+      </section>
+      <!-- Demo -->
+      <section id="demo">
+        <h3>Einschränkung der Demo-Software</h3>
+        <p>
+          Die aktuelle Demo-Software ist hier im Download-Bereich verfügbar. Mit dieser Software kann man sich ein Bild machen, ob die lizenzierte Version nützlich in der eigenen Arbeitsumgebung sein könnte.<br>
+          <strong>Die Einschränkung der Demo-Software ist, dass zufällig ausgewählte Messwerte im Laborbericht nicht sichtbar sind.</strong>
+        </p>
+      </section>
+      <!-- Preise -->
+      <section id="pricing">
+        <h3>Preise</h3>
+        <p>
+          µLabTool hat sich von einem einfachen HL7-Konverter zu einem erweiterbaren Middleware-System entwickelt.<br>
+          Bis zum aktuellen Zeitpunkt stecken an die 200 Arbeitsstunden in diesem Projekt. Wenn etwas mit Liebe entwickelt und ständig gepflegt wird, dann bedeutet das Aufwand. Mit dem angegebenen Preis für eine Laborgeräte-Lizenz machen Sie den Entwickler nicht reich. - Aber Sie geben ihm Anerkennung.
+        </p>
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-md-4">
+              <!-- Card 1 -->
+              <div class="card text-bg-dark rounded-4 shadow-lg border-0 mb-5">
+                <div class="card-body">
+                  <div>
+                    <h4 class="fw-bold">Installation</h4>
+                    <p class="text-white">Installation von µLabTool</p>
+                  </div>
+                  <h2 class="fs-1 fw-bold mt-4 mb-3">€100,-</h2>
+                  <div>
+                    <h4 class="fw-bold">einmalig</h4>
+                    <p>(Gebühr entfällt, wenn Software selbständig installiert wird.)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <!-- Card 2 -->
+              <div class="card text-bg-dark rounded-4 shadow-lg border-0 mb-5">
+                <div class="card-body">
+                  <div>
+                    <h4 class="fw-bold">Lizenz für 1 Laborgerät</h4>
+                    <p class="text-white">derzeit <a href="#devices" class="text-reset text-decoration-underline">4 verschiedene Geräte</a> unterstützt</p>
+                  </div>
+                  <h2 class="fs-1 fw-bold mt-4 mb-3">€400,-</h2>
+                  <div>
+                    <h4 class="fw-bold">einmalig</h4>
+                    <p>(pro Gerät)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <!-- Card 3 -->
+              <div class="card text-bg-dark rounded-4 shadow-lg border-0 mb-5">
+                <div class="card-body">
+                  <div>
+                    <h4 class="fw-bold">Software - Wartung</h4>
+                    <p class="text-white">für reibungslosen Betrieb</p>
+                  </div>
+                  <h2 class="fs-1 fw-bold mt-4 mb-3">€50,-</h2>
+                  <div>
+                    <h4 class="fw-bold">jährlich</h4>
+                    <p>(Beinhaltet kostenlose Updates und Support.)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Partner -->
       <section id="partners">
         <h3>Partnerbetriebe</h3>
@@ -131,8 +287,7 @@
         <h3>Kontaktdaten</h3>
         <ul>
           <li>Thomas Mühlbauer</li>
-          <li>
-            <strong>dev@muehlis.eu</strong>
+          <li><a href="mailto:dev@muehlis.eu" class="text-reset text-decoration-underline"><strong>dev@muehlis.eu</strong></a>
           </li>
         </ul>
       </section>
@@ -146,6 +301,8 @@
         </p>
       </footer>
     </div>
+    <!-- Don't go past here -->
+    <div style="margin-top: 350px"></div>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
